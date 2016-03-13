@@ -9,10 +9,10 @@ permalink: /project.html
 <div class="wf-container" style="margin-top: 80px;">
       {% for post in site.posts %}
       {% if post.categories contains 'project' %}
-      
+
      <div class="wf-box">
          <a id="route" href="{{ post.url | prepend: site.baseurl }}">
-        
+
 <div class="tglgede" style="
     background-color: rgba(105, 105, 105, 0.44);
     background-image: url({{post.image.url}});
@@ -28,10 +28,10 @@ permalink: /project.html
     margin-bottom: 0;
 ">
 
-  </p> 
+  </p>
   </div>
-        
-        
+
+
          </a>
          <div class="content">
             <a id="route" href="{{ post.url | prepend: site.baseurl }}">
@@ -41,12 +41,13 @@ permalink: /project.html
     color: #fff;
     font-size: 15px;
     border-top: 3px solid #03775A;">{{ post.title }}</h3>
-            </a>   
-         
-         </div>
-      </div>    
- 
-      {% endif %}        
-      {% endfor %}        
+            </a>
 
-  
+         </div>
+      </div>
+
+      {% endif %}
+      {% endfor %}
+
+</div>
+</div>

@@ -4,7 +4,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Spaghetti-san Personal Blog</li>
+          <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
@@ -41,15 +41,12 @@
   </div>
 </footer>
 <!--- Where Javascript Loaded --->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-pjax.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-preload.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-tooltipster.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 <script type="text/javascript" src="/assets/js/jquery-autocomplete.js"></script>
-<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-<script id="dsq-count-scr" src="//spaghettisan.disqus.com/count.js" async></script>
 <script>
 $.preload({
     forward: $.pjax.follow,
@@ -118,14 +115,5 @@ var options = {
     theme: "square"
 };
 $("#countries").easyAutocomplete(options);
-var waterfall = new Waterfall({
-    containerSelector: ".wf-container",
-    boxSelector: ".wf-box",
-    minBoxWidth: 180
-});
-$(document).ready(function() {
-    $(".menu-icon").click(function() {
-        $(".trigger").toggle()
-    })
-});
 </script>
+<script id="dsq-count-scr" src="//{{site.disqus_shortname}}.disqus.com/count.js" async></script>
