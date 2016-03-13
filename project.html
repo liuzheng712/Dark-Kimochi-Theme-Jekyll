@@ -49,5 +49,19 @@ permalink: /project.html
       {% endif %}
       {% endfor %}
 
-</div>
-</div>
+</div></div>
+<script type="text/javascript" src="/assets/js/responsive_waterfall.js"></script>
+<script>
+        $(document).ready(function () {
+            var waterfall = new Waterfall({
+                containerSelector: ".wf-container",
+                boxSelector: ".wf-box",
+                minBoxWidth: 180
+            });
+            $(document).ready(function () {
+                $(".menu-icon").click(function () {
+                    $(".trigger").toggle()
+                })
+            })
+        })
+</script>
